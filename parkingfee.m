@@ -8,7 +8,7 @@ function [totalFee] = parkingfee(hoursParked)
             totalFee = 7;
         else
             if hoursParked > 24
-                totalFee = ((floor(hoursParked)*24)+((((rem(hoursParked/24))*24)-4)+7));
+                totalFee = (24)+((((rem(hoursParked/24))*24)-4)+7));
             else
                 totalFee = ((hoursParked-4) + 7);
             end
